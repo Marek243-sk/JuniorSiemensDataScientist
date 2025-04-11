@@ -31,9 +31,9 @@ The output is a well-structured HTML report highlighting these differences in a 
 ---
 
 ## Folder Structure
-
+```
 Siemens_Puškáš/  
-```  Config/  
+    Config/  
         config.json
     DATA/  
         Data.csv  
@@ -48,7 +48,7 @@ Siemens_Puškáš/
         comparison.html  
     requirements.txt  
     README.md   
-
+```
 ---
 
 ## The config.json file includes all parameters needed for the script:  
