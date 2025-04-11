@@ -34,7 +34,7 @@ The output is a well-structured HTML report highlighting these differences in a 
 
 Siemens_Puškáš/  
     Config/  
-        config.json  
+        config.json
     DATA/  
         Data.csv  
         Modified_data.csv  
