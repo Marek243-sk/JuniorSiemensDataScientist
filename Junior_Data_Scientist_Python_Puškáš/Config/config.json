@@ -1,0 +1,92 @@
+{
+  "data": {
+    "gt_path": "DATA/Data.csv",
+    "modified_data_path": "DATA/Modified_data.csv"
+  },
+  "comparison": {
+    "global_threshold": 0.2,
+    "compare_missing_values": true,
+    "compare_samples": true,
+    "per_measurement_thresholds": {
+      "Val_1": 0.1,
+      "Val_2": 0.15,
+      "Val_3": 0.2,
+      "Val_A": 0.05,
+      "Val_B": 0.3,
+      "Val_C": 0.01,
+      "Val_X": 0.15,
+      "Val_Y": 0.1,
+      "Val_Z": 1.0
+    }
+  },
+  "modifications": {
+    "value_modifications": {
+      "Val_1": {
+        "percent_to_modify": 0.1,
+        "operation": "increase_percent",
+        "value": 0.25
+      },
+      "Val_2": {
+        "percent_to_modify": 0.15,
+        "operation": "decrease_percent",
+        "value": 0.1
+      },
+      "Val_3": {
+        "percent_to_modify": 0.2,
+        "operation": "decrease_percent",
+        "value": 0.25
+      },
+      "Val_A": {
+        "percent_to_modify": 0.05,
+        "operation": "decrease_percent",
+        "value": 0.5
+      },
+      "Val_B": {
+        "percent_to_modify": 0.3,
+        "operation": "increase_percent",
+        "value": 0.2
+      },
+      "Val_C": {
+        "percent_to_modify": 0.01,
+        "operation": "increase_percent",
+        "value": 0.95
+      },
+      "Val_X": {
+        "percent_to_modify": 0.15,
+        "operation": "decrease_percent",
+        "value": 0.22
+      },
+      "Val_Y": {
+        "percent_to_modify": 0.1,
+        "operation": "increase_percent",
+        "value": 0.33
+      },
+      "Val_Z": {
+        "percent_to_modify": 1.0,
+        "operation": "decrease_percent",
+        "value": 0.2
+      }
+    },
+    "missing_value_changes": {
+      "num_to_nan": 5,
+      "nan_to_num": 5
+    },
+    "sample_changes": {
+      "remove": 5,
+      "add": 7
+    }
+  },
+  "statistics_comparison": {
+    "global_threshold": 0.05,
+    "per_statistic_thresholds": {
+      "Mean": 0.03,
+      "Std": 0.08,
+      "Variance": 0.1,
+      "Max": 0.02,
+      "Min": 0.04,
+      "Median": 0.03,
+      "5th Percentile": 0.05,
+      "95th Percentile": 0.05
+    }
+  }
+}

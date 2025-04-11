@@ -1,0 +1,669 @@
+
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 40px;
+                background-color: #f9f9f9;
+                color: #333;
+            }
+            h1 {
+                color: #2c3e50;
+            }
+            .styled-table {
+                border-collapse: collapse;
+                margin: 25px 0;
+                font-size: 0.95em;
+                min-width: 600px;
+                border: 1px solid #ddd;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .styled-table thead tr {
+                background-color: #009879;
+                color: #ffffff;
+                text-align: left;
+            }
+            .styled-table th, .styled-table td {
+                padding: 12px 15px;
+                border: 1px solid #ddd;
+            }
+            .styled-table tbody tr:nth-child(even) {
+                background-color: #f3f3f3;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Comparison Report</h1>
+        <h2>Statistics Differences</h2>
+        <table border="1" class="dataframe styled-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>attribute</th>
+      <th>statistic</th>
+      <th>gt_value</th>
+      <th>modified_val</th>
+      <th>percent_difference</th>
+      <th>threshold</th>
+      <th>Change</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Val_1</td>
+      <td>Mean</td>
+      <td>0.121600</td>
+      <td>0.155548</td>
+      <td>0.279182</td>
+      <td>0.03</td>
+      <td><span style="background-color:yellow; padding: 5px; color: black; border-radius: 4px;">27.92%</span></td>
+    </tr>
+    <tr>
+      <td>Val_1</td>
+      <td>Std</td>
+      <td>0.118701</td>
+      <td>0.174320</td>
+      <td>0.468558</td>
+      <td>0.08</td>
+      <td><span style="background-color:yellow; padding: 5px; color: black; border-radius: 4px;">46.86%</span></td>
+    </tr>
+    <tr>
+      <td>Val_1</td>
+      <td>Variance</td>
+      <td>0.014090</td>
+      <td>0.030387</td>
+      <td>1.156663</td>
+      <td>0.10</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">115.67%</span></td>
+    </tr>
+    <tr>
+      <td>Val_1</td>
+      <td>Min</td>
+      <td>0.001755</td>
+      <td>0.002194</td>
+      <td>0.250000</td>
+      <td>0.04</td>
+      <td><span style="background-color:yellow; padding: 5px; color: black; border-radius: 4px;">25.00%</span></td>
+    </tr>
+    <tr>
+      <td>Val_1</td>
+      <td>Median</td>
+      <td>0.110556</td>
+      <td>0.121613</td>
+      <td>0.100013</td>
+      <td>0.03</td>
+      <td><span style="background-color:green; padding: 5px; color: white; border-radius: 4px;">10.00%</span></td>
+    </tr>
+    <tr>
+      <td>Val_1</td>
+      <td>95th Percentile</td>
+      <td>0.242341</td>
+      <td>0.548194</td>
+      <td>1.262075</td>
+      <td>0.05</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">126.21%</span></td>
+    </tr>
+    <tr>
+      <td>Val_2</td>
+      <td>Mean</td>
+      <td>0.004365</td>
+      <td>0.038199</td>
+      <td>7.751067</td>
+      <td>0.03</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">775.11%</span></td>
+    </tr>
+    <tr>
+      <td>Val_2</td>
+      <td>Std</td>
+      <td>0.008545</td>
+      <td>0.156981</td>
+      <td>17.370650</td>
+      <td>0.08</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">1737.07%</span></td>
+    </tr>
+    <tr>
+      <td>Val_2</td>
+      <td>Variance</td>
+      <td>0.000073</td>
+      <td>0.024643</td>
+      <td>336.480799</td>
+      <td>0.10</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">33648.08%</span></td>
+    </tr>
+    <tr>
+      <td>Val_2</td>
+      <td>Max</td>
+      <td>0.044915</td>
+      <td>0.997807</td>
+      <td>21.215455</td>
+      <td>0.02</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">2121.55%</span></td>
+    </tr>
+    <tr>
+      <td>Val_2</td>
+      <td>95th Percentile</td>
+      <td>0.024703</td>
+      <td>0.076973</td>
+      <td>2.115962</td>
+      <td>0.05</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">211.60%</span></td>
+    </tr>
+    <tr>
+      <td>Val_3</td>
+      <td>Mean</td>
+      <td>0.989263</td>
+      <td>0.901854</td>
+      <td>0.088358</td>
+      <td>0.03</td>
+      <td><span style="background-color:green; padding: 5px; color: white; border-radius: 4px;">8.84%</span></td>
+    </tr>
+    <tr>
+      <td>Val_3</td>
+      <td>Std</td>
+      <td>0.003649</td>
+      <td>0.191315</td>
+      <td>51.427309</td>
+      <td>0.08</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">5142.73%</span></td>
+    </tr>
+    <tr>
+      <td>Val_3</td>
+      <td>Variance</td>
+      <td>0.000013</td>
+      <td>0.036601</td>
+      <td>2747.622768</td>
+      <td>0.10</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">274762.28%</span></td>
+    </tr>
+    <tr>
+      <td>Val_3</td>
+      <td>Min</td>
+      <td>0.963536</td>
+      <td>0.045254</td>
+      <td>0.953034</td>
+      <td>0.04</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">95.30%</span></td>
+    </tr>
+    <tr>
+      <td>Val_3</td>
+      <td>5th Percentile</td>
+      <td>0.985023</td>
+      <td>0.635668</td>
+      <td>0.354667</td>
+      <td>0.05</td>
+      <td><span style="background-color:yellow; padding: 5px; color: black; border-radius: 4px;">35.47%</span></td>
+    </tr>
+    <tr>
+      <td>Val_A</td>
+      <td>Mean</td>
+      <td>15.533581</td>
+      <td>14.213837</td>
+      <td>0.084961</td>
+      <td>0.03</td>
+      <td><span style="background-color:green; padding: 5px; color: white; border-radius: 4px;">8.50%</span></td>
+    </tr>
+    <tr>
+      <td>Val_A</td>
+      <td>Std</td>
+      <td>2.275776</td>
+      <td>4.520082</td>
+      <td>0.986172</td>
+      <td>0.08</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">98.62%</span></td>
+    </tr>
+    <tr>
+      <td>Val_A</td>
+      <td>Variance</td>
+      <td>5.179155</td>
+      <td>20.431141</td>
+      <td>2.944879</td>
+      <td>0.10</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">294.49%</span></td>
+    </tr>
+    <tr>
+      <td>Val_A</td>
+      <td>Min</td>
+      <td>11.138244</td>
+      <td>0.038583</td>
+      <td>0.996536</td>
+      <td>0.04</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">99.65%</span></td>
+    </tr>
+    <tr>
+      <td>Val_A</td>
+      <td>5th Percentile</td>
+      <td>11.968112</td>
+      <td>0.926842</td>
+      <td>0.922557</td>
+      <td>0.05</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">92.26%</span></td>
+    </tr>
+    <tr>
+      <td>Val_B</td>
+      <td>Mean</td>
+      <td>0.747128</td>
+      <td>0.771689</td>
+      <td>0.032875</td>
+      <td>0.03</td>
+      <td><span style="background-color:green; padding: 5px; color: white; border-radius: 4px;">3.29%</span></td>
+    </tr>
+    <tr>
+      <td>Val_B</td>
+      <td>Std</td>
+      <td>0.139106</td>
+      <td>0.193045</td>
+      <td>0.387750</td>
+      <td>0.08</td>
+      <td><span style="background-color:yellow; padding: 5px; color: black; border-radius: 4px;">38.78%</span></td>
+    </tr>
+    <tr>
+      <td>Val_B</td>
+      <td>Variance</td>
+      <td>0.019351</td>
+      <td>0.037266</td>
+      <td>0.925850</td>
+      <td>0.10</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">92.59%</span></td>
+    </tr>
+    <tr>
+      <td>Val_B</td>
+      <td>Max</td>
+      <td>1.031633</td>
+      <td>1.235153</td>
+      <td>0.197279</td>
+      <td>0.02</td>
+      <td><span style="background-color:green; padding: 5px; color: white; border-radius: 4px;">19.73%</span></td>
+    </tr>
+    <tr>
+      <td>Val_B</td>
+      <td>Min</td>
+      <td>0.526837</td>
+      <td>0.073920</td>
+      <td>0.859692</td>
+      <td>0.04</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">85.97%</span></td>
+    </tr>
+    <tr>
+      <td>Val_B</td>
+      <td>Median</td>
+      <td>0.722457</td>
+      <td>0.761842</td>
+      <td>0.054515</td>
+      <td>0.03</td>
+      <td><span style="background-color:green; padding: 5px; color: white; border-radius: 4px;">5.45%</span></td>
+    </tr>
+    <tr>
+      <td>Val_B</td>
+      <td>95th Percentile</td>
+      <td>1.010579</td>
+      <td>1.154082</td>
+      <td>0.142001</td>
+      <td>0.05</td>
+      <td><span style="background-color:green; padding: 5px; color: white; border-radius: 4px;">14.20%</span></td>
+    </tr>
+    <tr>
+      <td>Val_C</td>
+      <td>Mean</td>
+      <td>15.585866</td>
+      <td>14.762388</td>
+      <td>0.052835</td>
+      <td>0.03</td>
+      <td><span style="background-color:green; padding: 5px; color: white; border-radius: 4px;">5.28%</span></td>
+    </tr>
+    <tr>
+      <td>Val_C</td>
+      <td>Std</td>
+      <td>2.291548</td>
+      <td>4.606196</td>
+      <td>1.010080</td>
+      <td>0.08</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">101.01%</span></td>
+    </tr>
+    <tr>
+      <td>Val_C</td>
+      <td>Variance</td>
+      <td>5.251192</td>
+      <td>21.217039</td>
+      <td>3.040423</td>
+      <td>0.10</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">304.04%</span></td>
+    </tr>
+    <tr>
+      <td>Val_C</td>
+      <td>Max</td>
+      <td>21.220720</td>
+      <td>33.259693</td>
+      <td>0.567322</td>
+      <td>0.02</td>
+      <td><span style="background-color:orange; padding: 5px; color: white; border-radius: 4px;">56.73%</span></td>
+    </tr>
+    <tr>
+      <td>Val_C</td>
+      <td>Min</td>
+      <td>11.127001</td>
+      <td>0.130444</td>
+      <td>0.988277</td>
+      <td>0.04</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">98.83%</span></td>
+    </tr>
+    <tr>
+      <td>Val_C</td>
+      <td>5th Percentile</td>
+      <td>11.909596</td>
+      <td>0.939701</td>
+      <td>0.921097</td>
+      <td>0.05</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">92.11%</span></td>
+    </tr>
+    <tr>
+      <td>Val_X</td>
+      <td>Mean</td>
+      <td>0.743371</td>
+      <td>0.706648</td>
+      <td>0.049399</td>
+      <td>0.03</td>
+      <td><span style="background-color:green; padding: 5px; color: white; border-radius: 4px;">4.94%</span></td>
+    </tr>
+    <tr>
+      <td>Val_X</td>
+      <td>Std</td>
+      <td>0.138145</td>
+      <td>0.164396</td>
+      <td>0.190025</td>
+      <td>0.08</td>
+      <td><span style="background-color:green; padding: 5px; color: white; border-radius: 4px;">19.00%</span></td>
+    </tr>
+    <tr>
+      <td>Val_X</td>
+      <td>Variance</td>
+      <td>0.019084</td>
+      <td>0.027026</td>
+      <td>0.416159</td>
+      <td>0.10</td>
+      <td><span style="background-color:yellow; padding: 5px; color: black; border-radius: 4px;">41.62%</span></td>
+    </tr>
+    <tr>
+      <td>Val_X</td>
+      <td>Min</td>
+      <td>0.524712</td>
+      <td>0.181789</td>
+      <td>0.653545</td>
+      <td>0.04</td>
+      <td><span style="background-color:orange; padding: 5px; color: white; border-radius: 4px;">65.35%</span></td>
+    </tr>
+    <tr>
+      <td>Val_X</td>
+      <td>Median</td>
+      <td>0.717658</td>
+      <td>0.687305</td>
+      <td>0.042294</td>
+      <td>0.03</td>
+      <td><span style="background-color:green; padding: 5px; color: white; border-radius: 4px;">4.23%</span></td>
+    </tr>
+    <tr>
+      <td>Val_X</td>
+      <td>5th Percentile</td>
+      <td>0.562168</td>
+      <td>0.459339</td>
+      <td>0.182915</td>
+      <td>0.05</td>
+      <td><span style="background-color:green; padding: 5px; color: white; border-radius: 4px;">18.29%</span></td>
+    </tr>
+    <tr>
+      <td>Val_Y</td>
+      <td>Mean</td>
+      <td>0.007664</td>
+      <td>0.031806</td>
+      <td>3.150181</td>
+      <td>0.03</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">315.02%</span></td>
+    </tr>
+    <tr>
+      <td>Val_Y</td>
+      <td>Std</td>
+      <td>0.006811</td>
+      <td>0.118109</td>
+      <td>16.342205</td>
+      <td>0.08</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">1634.22%</span></td>
+    </tr>
+    <tr>
+      <td>Val_Y</td>
+      <td>Variance</td>
+      <td>0.000046</td>
+      <td>0.013950</td>
+      <td>299.752082</td>
+      <td>0.10</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">29975.21%</span></td>
+    </tr>
+    <tr>
+      <td>Val_Y</td>
+      <td>Max</td>
+      <td>0.060337</td>
+      <td>0.982361</td>
+      <td>15.281245</td>
+      <td>0.02</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">1528.12%</span></td>
+    </tr>
+    <tr>
+      <td>Val_Y</td>
+      <td>Median</td>
+      <td>0.006994</td>
+      <td>0.007260</td>
+      <td>0.038033</td>
+      <td>0.03</td>
+      <td><span style="background-color:green; padding: 5px; color: white; border-radius: 4px;">3.80%</span></td>
+    </tr>
+    <tr>
+      <td>Val_Y</td>
+      <td>5th Percentile</td>
+      <td>0.000730</td>
+      <td>0.000815</td>
+      <td>0.115448</td>
+      <td>0.05</td>
+      <td><span style="background-color:green; padding: 5px; color: white; border-radius: 4px;">11.54%</span></td>
+    </tr>
+    <tr>
+      <td>Val_Y</td>
+      <td>95th Percentile</td>
+      <td>0.015510</td>
+      <td>0.105696</td>
+      <td>5.814623</td>
+      <td>0.05</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">581.46%</span></td>
+    </tr>
+    <tr>
+      <td>Val_Z</td>
+      <td>Mean</td>
+      <td>0.005976</td>
+      <td>0.032026</td>
+      <td>4.359531</td>
+      <td>0.03</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">435.95%</span></td>
+    </tr>
+    <tr>
+      <td>Val_Z</td>
+      <td>Std</td>
+      <td>0.011534</td>
+      <td>0.125277</td>
+      <td>9.861408</td>
+      <td>0.08</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">986.14%</span></td>
+    </tr>
+    <tr>
+      <td>Val_Z</td>
+      <td>Variance</td>
+      <td>0.000133</td>
+      <td>0.015694</td>
+      <td>116.970186</td>
+      <td>0.10</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">11697.02%</span></td>
+    </tr>
+    <tr>
+      <td>Val_Z</td>
+      <td>Max</td>
+      <td>0.058823</td>
+      <td>0.863315</td>
+      <td>13.676486</td>
+      <td>0.02</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">1367.65%</span></td>
+    </tr>
+    <tr>
+      <td>Val_Z</td>
+      <td>Median</td>
+      <td>0.003534</td>
+      <td>0.002952</td>
+      <td>0.164686</td>
+      <td>0.03</td>
+      <td><span style="background-color:green; padding: 5px; color: white; border-radius: 4px;">16.47%</span></td>
+    </tr>
+    <tr>
+      <td>Val_Z</td>
+      <td>95th Percentile</td>
+      <td>0.037596</td>
+      <td>0.140587</td>
+      <td>2.739390</td>
+      <td>0.05</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">273.94%</span></td>
+    </tr>
+    <tr>
+      <td>Val_I1</td>
+      <td>Mean</td>
+      <td>1.394495</td>
+      <td>1.341290</td>
+      <td>0.038154</td>
+      <td>0.03</td>
+      <td><span style="background-color:green; padding: 5px; color: white; border-radius: 4px;">3.82%</span></td>
+    </tr>
+    <tr>
+      <td>Val_I1</td>
+      <td>Variance</td>
+      <td>0.278118</td>
+      <td>0.316408</td>
+      <td>0.137676</td>
+      <td>0.10</td>
+      <td><span style="background-color:green; padding: 5px; color: white; border-radius: 4px;">13.77%</span></td>
+    </tr>
+    <tr>
+      <td>Val_I1</td>
+      <td>Min</td>
+      <td>1.000000</td>
+      <td>0.060279</td>
+      <td>0.939721</td>
+      <td>0.04</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">93.97%</span></td>
+    </tr>
+    <tr>
+      <td>Val_I1</td>
+      <td>5th Percentile</td>
+      <td>1.000000</td>
+      <td>0.858626</td>
+      <td>0.141374</td>
+      <td>0.05</td>
+      <td><span style="background-color:green; padding: 5px; color: white; border-radius: 4px;">14.14%</span></td>
+    </tr>
+    <tr>
+      <td>Val_I2</td>
+      <td>Mean</td>
+      <td>1.055046</td>
+      <td>1.019773</td>
+      <td>0.033433</td>
+      <td>0.03</td>
+      <td><span style="background-color:green; padding: 5px; color: white; border-radius: 4px;">3.34%</span></td>
+    </tr>
+    <tr>
+      <td>Val_I2</td>
+      <td>Std</td>
+      <td>0.229123</td>
+      <td>0.278547</td>
+      <td>0.215706</td>
+      <td>0.08</td>
+      <td><span style="background-color:yellow; padding: 5px; color: black; border-radius: 4px;">21.57%</span></td>
+    </tr>
+    <tr>
+      <td>Val_I2</td>
+      <td>Variance</td>
+      <td>0.052497</td>
+      <td>0.077588</td>
+      <td>0.477941</td>
+      <td>0.10</td>
+      <td><span style="background-color:yellow; padding: 5px; color: black; border-radius: 4px;">47.79%</span></td>
+    </tr>
+    <tr>
+      <td>Val_I2</td>
+      <td>Min</td>
+      <td>1.000000</td>
+      <td>0.067872</td>
+      <td>0.932128</td>
+      <td>0.04</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">93.21%</span></td>
+    </tr>
+    <tr>
+      <td>Val_I2</td>
+      <td>5th Percentile</td>
+      <td>1.000000</td>
+      <td>0.720352</td>
+      <td>0.279648</td>
+      <td>0.05</td>
+      <td><span style="background-color:yellow; padding: 5px; color: black; border-radius: 4px;">27.96%</span></td>
+    </tr>
+    <tr>
+      <td>Val_I3</td>
+      <td>Mean</td>
+      <td>2.605505</td>
+      <td>2.463729</td>
+      <td>0.054414</td>
+      <td>0.03</td>
+      <td><span style="background-color:green; padding: 5px; color: white; border-radius: 4px;">5.44%</span></td>
+    </tr>
+    <tr>
+      <td>Val_I3</td>
+      <td>Std</td>
+      <td>0.593457</td>
+      <td>0.767608</td>
+      <td>0.293450</td>
+      <td>0.08</td>
+      <td><span style="background-color:yellow; padding: 5px; color: black; border-radius: 4px;">29.35%</span></td>
+    </tr>
+    <tr>
+      <td>Val_I3</td>
+      <td>Variance</td>
+      <td>0.352192</td>
+      <td>0.589222</td>
+      <td>0.673014</td>
+      <td>0.10</td>
+      <td><span style="background-color:orange; padding: 5px; color: white; border-radius: 4px;">67.30%</span></td>
+    </tr>
+    <tr>
+      <td>Val_I3</td>
+      <td>Min</td>
+      <td>2.000000</td>
+      <td>0.026560</td>
+      <td>0.986720</td>
+      <td>0.04</td>
+      <td><span style="background-color:red; padding: 5px; color: white; border-radius: 4px;">98.67%</span></td>
+    </tr>
+    <tr>
+      <td>Val_I3</td>
+      <td>5th Percentile</td>
+      <td>2.000000</td>
+      <td>0.950900</td>
+      <td>0.524550</td>
+      <td>0.05</td>
+      <td><span style="background-color:orange; padding: 5px; color: white; border-radius: 4px;">52.45%</span></td>
+    </tr>
+    <tr>
+      <td>Val_I3</td>
+      <td>95th Percentile</td>
+      <td>3.600000</td>
+      <td>3.000000</td>
+      <td>0.166667</td>
+      <td>0.05</td>
+      <td><span style="background-color:green; padding: 5px; color: white; border-radius: 4px;">16.67%</span></td>
+    </tr>
+  </tbody>
+</table>
+    </body>
+    </html>
+    

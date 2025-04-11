@@ -1,0 +1,7 @@
+Python 3.9 or above
+Packages:
+- pandas
+- numpy
+- sklearn
+- pathlib
+- json
