@@ -33,7 +33,7 @@ The output is a well-structured HTML report highlighting these differences in a 
 ## Folder Structure
 
 Siemens_Puškáš/  
-    Config/  
+```  Config/  
         config.json
     DATA/  
         Data.csv  
