@@ -32,22 +32,22 @@ The output is a well-structured HTML report highlighting these differences in a 
 
 ## Folder Structure
 
-Siemens_Puškáš/  
-  Config/  
-    config.json  
-  DATA/  
-    Data.csv  
-    Modified_data.csv  
-  Solution_python/  
-    comparison.py
-    main.py
-    preprocessing.py
-    reporting.py
-  Template/  
-    comparison.csv  
-    comparison.html   
-  requirements.txt  
-  README.md  
+Siemens_Puškáš/
+├── Config/
+│   └── config.json
+├── DATA/
+│   ├── Data.csv
+│   └── Modified_data.csv
+├── Solution_python/
+│   ├── comparison.py
+│   └── main.py
+│   └── preprocessing.py
+│   └── reporting.py
+├── Template/
+│   ├── comparison.csv
+│   └── comparison.html
+├── requirements.txt
+└── README.md 
 
 ---
 
